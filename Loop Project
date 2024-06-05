@@ -1,1 +1,76 @@
+//create a variable to hold NFTs
+const NFTs = [];
 
+// This function will take in some values as parameters, create an NFT object using the parameters passed to it for its metadata, and store it in the variable.
+function mintNFT(Name, HairColor, ShirtType, FaceShape) {
+    let NFT = {
+        name: Name,
+        hairColor: HairColor,
+        shirtType: ShirtType,
+        faceShape: FaceShape,
+    };
+    NFTs.push(NFT);
+    console.log("---NFT " + Name + " saved in directory---");
+}
+
+// create a "loop" that will go through an "array" of NFTs and print their metadata with console.log()
+function listNFTs() {
+    for (let i = 0; i < NFTs.length; i++) {
+        console.log("\nNFT : " + (i + 1));
+        console.log("Name:\t\t" + NFTs[i].name);
+        console.log("Hair Color:\t" + NFTs[i].hairColor);
+        console.log("Shirt Type:\t" + NFTs[i].shirtType);
+        console.log("Face Shape:\t" + NFTs[i].faceShape);
+    }
+}
+
+// print the total number of NFTs we have minted to the console
+function getTotalSupply() {
+    console.log("------------------------");
+    console.log("NFT Directory: " + NFTs.length);
+    console.log("------------------------");
+}
+
+// call your functions below this line
+mintNFT("Gaurav", "White", "Simple", "Oval");
+mintNFT("Abhishek", "black", "Colour", "Round");
+mintNFT("Pankaj", "Brown", "Shoulder Drop", "Round");
+mintNFT("Sachin", "Black", "polo", "Round");
+
+listNFTs();
+getTotalSupply();
+
+
+OUTPUT - 
+
+---NFT Gaurav saved in directory---
+---NFT Abhishek saved in directory---
+---NFT Pankaj saved in directory---
+---NFT Sachin saved in directory---
+
+NFT : 1
+Name:		Gaurav
+Hair Color:	White
+Shirt Type:	Simple
+Face Shape:	Oval
+
+NFT : 2
+Name:		Abhishek
+Hair Color:	black
+Shirt Type:	Colour
+Face Shape:	Round
+
+NFT : 3
+Name:		Pankaj
+Hair Color:	Brown
+Shirt Type:	Shoulder Drop
+Face Shape:	Round
+
+NFT : 4
+Name:		Sachin
+Hair Color:	Black
+Shirt Type:	polo
+Face Shape:	Round
+------------------------
+NFT Directory: 4
+------------------------
