@@ -41,36 +41,3 @@ listNFTs();
 getTotalSupply();
 
 
-OUTPUT - 
-
----NFT Gaurav saved in directory---
----NFT Abhishek saved in directory---
----NFT Pankaj saved in directory---
----NFT Sachin saved in directory---
-
-NFT : 1
-Name:		Gaurav
-Hair Color:	White
-Shirt Type:	Simple
-Face Shape:	Oval
-
-NFT : 2
-Name:		Abhishek
-Hair Color:	black
-Shirt Type:	Colour
-Face Shape:	Round
-
-NFT : 3
-Name:		Pankaj
-Hair Color:	Brown
-Shirt Type:	Shoulder Drop
-Face Shape:	Round
-
-NFT : 4
-Name:		Sachin
-Hair Color:	Black
-Shirt Type:	polo
-Face Shape:	Round
-------------------------
-NFT Directory: 4
-------------------------
